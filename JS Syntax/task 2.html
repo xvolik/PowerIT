@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h4>//Задача №2 - циклы <br>
+        //Напишите код который посчитает и выведет в консоль сумму четных чисел из интервала [a, b]</h4>
+</div>
+<script>
+    function task2 () {
+        const a = Number(prompt('Введите начало дипазона'));
+        const b = Number(prompt('Введите конец дипазона'));
+        let sum = 0;
+        for (let i=a; i <=b; i++){
+            if(i%2 == 0) {
+                console.log(i);
+                sum += i;
+            }
+        }
+        console.log(sum);
+    };
+    task2();
+</script>
+</body>
+</html>

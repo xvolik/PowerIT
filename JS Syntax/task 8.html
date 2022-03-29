@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="loginform">
+    <h4>// Задача №8 - условный оператор <br>
+        // Напишите код который проверит правильность username и password и выводит следующие сообщения:<br>
+        //     Привет, если совпадает username и password<br>
+        // Неправильный пароль если username введен правильно а пароль нет<br>
+        // Неправильный username, если введен неправильный username<br>
+        // Ошибка Валидации, если ничего не введено<br>
+        // PS: На практике не делать такое никогда (писать пользователю что он ввел неверно, username или password)</h4>
+    <div>
+    <input style="margin: 5px;" placeholder="Введите логин" type="text" id="logdata" value=""/>
+    </div>
+    <div>
+    <input style=" margin: 5px;" placeholder="Введите пароль" type="password" id="passdata" value=""/>
+    </div>
+    <button type="submit" name="loginbtn" onclick="check()">Login</button>
+    <button type="submit" name="checkbtn" onclick="check2()">Check</button>
+</div>
+<script>
+    const x = ("login");
+    const y = ("password");
+    const usernameinput = document.getElementById("logdata");
+    const passwordinput = document.getElementById("passdata");
+
+    function check() {
+        if (usernameinput.value === "" && passwordinput.value === "") {
+            alert("Ошибка Валидации");
+        } else if (usernameinput.value !== x) {
+            alert("Неправильный username");
+        } else if (passwordinput.value !== y) {
+            alert("Неправильный пароль");
+        } else {
+            alert("Данные совпадают");
+        }
+    }
+    function check2() {
+        console.log(usernameinput.value);
+        console.log(passwordinput.value);
+    }
+</script>
+</body>
+</html>

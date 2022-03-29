@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+   <h4>// // Задача №4 - функции <br>
+       // // Напишите функцию ucFirst(str), которая возвращает строку str с заглавным первым символом. <br>
+       Например: ucFirst("вася") == "Вася";</h4>
+</div>
+<script>
+    const UserName = prompt("Введите имя");
+
+    function ucFirst(UserName) {
+        if (!UserName) return;
+        return UserName.charAt(0).toUpperCase() + UserName.slice(1);
+    }
+    alert(ucFirst(UserName));
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h4>// Задача №10 - условный оператор и циклы <br>
+        // Напишите функцию которая определяет и выводит в консоль все делитель заданного числа.<br>
+        //     const dividers = (number) => {<br>
+        // }</h4>
+</div>
+<script>
+    const dividers = () => {
+        let number = prompt('Please enter number')
+        for (let i = 0; i <= number; i++) {
+            if (number % i === 0) {
+                console.log('Divider:' + i);
+            }
+        }
+    }
+    dividers();
+</script>
+</body>
+</html>
