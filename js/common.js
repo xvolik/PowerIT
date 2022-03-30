@@ -182,3 +182,62 @@
 
 // Arrays
 
+// Задача №1 - вывод массива
+// Создайте массив из n чисел и выводите его в консоль 5 разными способами:
+//     for, while, do … while
+// for in
+//     for of
+//         forEach
+// map
+// В конце кода, пишите в комментарии свое мнение какой из способов лучше. Найдите еще один способ вывода массива.
+// function task2() {
+//     const a = Number(prompt('Введите начало дипазона'));
+//     const b = Number(prompt('Введите конец дипазона'));
+//
+//     let sum = [];
+//     for (let i = a; i <= b; i++) {
+//         sum.push(i);
+//     }
+//     // console.log(sum);
+//     // console.log(sum.length);
+//
+//     //Цикл for
+//     for (let i = 0; i < sum.length; i++) {
+//         console.log(sum[i]);
+//     }
+//     // Цикл for of
+//     for ( let sumItem of sum) {
+//         console.log(sumItem);
+//     }
+//     // Цикл while
+//     let i = 0;
+//     while (i < sum.length) {
+//         console.log(sum[i]);
+//         i++;
+//     }
+//     // Цикл do ... while
+//     let x = 0;
+//     do {
+//         console.log(sum[x]);
+//         x++;
+//     } while (x < sum.length);
+//     //Цикл for in
+//     for (let key in sum) {
+//         console.log(sum[key]);
+//     }
+//     // Цикл forEach
+//     sum.forEach(element => console.log(element));
+//     //
+//     // .map
+//     let summap = sum.map(function (x,i) {
+//         console.log(i, x)
+//     });
+//     //
+//     // .reduce
+//     const newsum = sum.reduce(function (previousValue , item) {
+//         console.log(item);
+//     },0)
+// }
+// task2();
+
+
