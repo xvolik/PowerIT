@@ -68,7 +68,7 @@
 // const c = Number(prompt('Введите c'));
 // console.log(Math.max(a,b,c), Math.min(a,b,c));
 
-// // Задача №4 - функции
+//  Задача №4 - функции
 // // Напишите функцию ucFirst(str), которая возвращает строку str с заглавным первым символом. Например:
 // ucFirst("вася") == "Вася";
 // const UserName = prompt("Введите имя");
@@ -239,5 +239,92 @@
 //     },0)
 // }
 // task2();
+
+// Задача №2 - обработка массива
+// Создать массив который содержит минимум 5 учеников  (алгоритм должен работать для любого количества учеников) и их оценки (минимум 4 оценки)
+//
+// [
+//     {
+//         name: “First”,
+// marks: [8, 10, 7, 5, 4]
+// }
+// ]
+//
+// Написать следующие функции обработки этого массива:
+//     считает среднюю оценку и выводит имя и среднюю оценку для каждого элемента массива +
+// выводит учеников со у которых средняя оценка < 5 +
+// находит учеников с максимальной и минимальной оценкой
+// сортирует учеников по средней оценке по убыванию (с самой большой средней в начале, с наименьшим в конце списка)
+// выводит тех учеников чья средняя оценка больше средней оценки всего класса
+
+let students = [
+     {
+        name: "Alex",
+        marks: [8, 10, 7, 5, 4],
+    },
+    {
+        name: "Serghei",
+        marks: [9, 10, 7, 7, 10],
+    },
+    {
+        name: "Marina",
+        marks: [6, 9, 4, 5, 10],
+    },
+    {
+        name: "Ruslan",
+        marks: [9, 10, 10, 8, 10],
+    },
+     {
+        name: "Maxim",
+        marks: [5, 4, 6, 3, 2],
+    },
+];
+let minmax = [];
+function score () {
+students.forEach(function (item) {
+    let result = item.marks.reduce((sum, current) => sum + current, 0);
+    let media = result / item.marks.length;
+    item['media'] = media;
+
+    // function minmaxfunc (media) {
+    //     minmax.push({name, media});
+    // }
+    // minmaxfunc(media);
+    function minmaxfunc (media) {
+        minmax.push(media);
+    }
+    minmaxfunc(media);
+    console.log(item.name +': '+ media);
+    if (media < 5){
+        console.log('Оценка меньше 5 у: ' + item.name +': '+ media + ' балла');
+    }
+    });
+    function SortArray(x, y){
+        if (x.media < y.media) {return -1;}
+        if (x.media > y.media) {return 1;}
+        return 0;
+    }
+    let s = minmax.sort(SortArray);
+    console.log(s);
+    for (let i = 0; i < students.length; i++) {
+        console.log(students[i].media);
+        console.log(typeof (Math.max(minmax)));
+        let a = Math.max(minmax);
+        // Math.min(minmax);
+        if (students[i].media === a) {
+            console.log('Наивысший балл: ' + students[i].name + ' ' + students[i].media);
+        }else {
+            console.log('что-то не так');
+        }
+    }
+console.log(students);
+    console.log(typeof (students[0].media));
+// console.log(minmax);
+    // console.log(Math.max(minmax));
+
+}
+score();
+
+
 
 
