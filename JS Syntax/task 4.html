@@ -11,13 +11,13 @@
        Например: ucFirst("вася") == "Вася";</h4>
 </div>
 <script>
-    const UserName = prompt("Введите имя");
+    const userName = prompt("Введите имя");
 
-    function ucFirst(UserName) {
-        if (!UserName) return;
-        return UserName.charAt(0).toUpperCase() + UserName.slice(1);
+    function ucFirst(userName) {
+        if (!userName) return;
+        return userName.charAt(0).toUpperCase() + userName.slice(1);
     }
-    alert(ucFirst(UserName));
+    alert(ucFirst(userName));
 </script>
 </body>
 </html>
