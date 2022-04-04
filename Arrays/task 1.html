@@ -20,44 +20,44 @@
         const a = Number(prompt('Введите начало дипазона'));
         const b = Number(prompt('Введите конец дипазона'));
 
-        let sum = [];
+        let someArray = [];
         for (let i = a; i <= b; i++) {
-            sum.push(i);
+            someArray.push(i);
         }
         //Цикл for
-        for (let i = 0; i < sum.length; i++) {
-            console.log(sum[i]);
+        for (let i = 0; i < someArray.length; i++) {
+            console.log(someArray[i]);
         }
         // Цикл for of
-        for ( let sumItem of sum) {
-            console.log(sumItem);
+        for ( let someArrayItem of someArray) {
+            console.log(someArrayItem);
         }
         // Цикл while
         let i = 0;
-        while (i < sum.length) {
-            console.log(sum[i]);
+        while (i < someArray.length) {
+            console.log(someArray[i]);
             i++;
         }
         // Цикл do ... while
         let x = 0;
         do {
-            console.log(sum[x]);
+            console.log(someArray[x]);
             x++;
-        } while (x < sum.length);
+        } while (x < someArray.length);
         //Цикл for in
-        for (let key in sum) {
-            console.log(sum[key]);
+        for (let key in someArray) {
+            console.log(someArray[key]);
         }
         // Цикл forEach
-        sum.forEach(element => console.log(element));
+        someArray.forEach(element => console.log(element));
         //
         // .map
-        let summap = sum.map(function (x,i) {
+        let someArrayNew = someArray.map(function (x,i) {
             console.log(i, x)
         });
         //
         // .reduce
-        const newsum = sum.reduce(function (previousValue , item) {
+        const newSomeArray = someArray.reduce(function (previousValue , item) {
             console.log(item);
         },0)
     }

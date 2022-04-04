@@ -13,21 +13,11 @@
         //     Например: alert( extractCurrencyValue('$120') === 120 ); // true</h4>
 </div>
 <script>
-    const str = "$" + prompt("Введите число");
-    // function extractCurrencyValue() {
-    //     return Number(str.slice(1));
-    // }
-    // console.log(extractCurrencyValue(str));
-    // console.log(typeof (extractCurrencyValue(str)));
-    const dolla = "\U+0024";
-    function extractCurrencyValue(str) {
-        for (i=0; i < str.length; i++) {
-            if (i === dolla ){
-                console.log(i);
-            }
-        }
-        }
-    console.log(extractCurrencyValue(str));
+    const price = "$120";
+    function extractCurrencyValue() {
+        return Number(price.slice(1));
+    }
+    console.log(extractCurrencyValue())
 </script>
 </body>
 </html>
