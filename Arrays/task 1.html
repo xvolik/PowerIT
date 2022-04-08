@@ -6,14 +6,15 @@
 </head>
 <body>
 <div>
-<h4>Задача №1 - вывод массива <br>
-    Создайте массив из n чисел и выводите его в консоль 5 разными способами:<br>
-    for, while, do … while<br>
-    for in<br>
-    for of<br>
-    forEach<br>
-    map<br>
-    В конце кода, пишите в комментарии свое мнение какой из способов лучше. Найдите еще один способ вывода массива.</h4>
+    <h4>Задача №1 - вывод массива <br>
+        Создайте массив из n чисел и выводите его в консоль 5 разными способами:<br>
+        for, while, do … while<br>
+        for in<br>
+        for of<br>
+        forEach<br>
+        map<br>
+        В конце кода, пишите в комментарии свое мнение какой из способов лучше. Найдите еще один способ вывода массива.
+    </h4>
 </div>
 <script>
     function task2() {
@@ -29,7 +30,7 @@
             console.log(someArray[i]);
         }
         // Цикл for of
-        for ( let someArrayItem of someArray) {
+        for (let someArrayItem of someArray) {
             console.log(someArrayItem);
         }
         // Цикл while
@@ -52,15 +53,16 @@
         someArray.forEach(element => console.log(element));
         //
         // .map
-        let someArrayNew = someArray.map(function (x,i) {
+        someArray.map(function (x, i) {
             console.log(i, x)
         });
         //
         // .reduce
-        const newSomeArray = someArray.reduce(function (previousValue , item) {
+        someArray.reduce(function (previousValue, item) {
             console.log(item);
-        },0)
+        }, 0)
     }
+
     task2();
 </script>
 </body>

@@ -488,3 +488,50 @@
 // let result = arr.slice(2, 5);
 // console.log(result);
 
+// Задача №8 - функции обработки массивов
+// Задан массив
+// const colors = [“red”, “green”, “blue”];
+// Написать функцию
+// checkColor(color)
+// которая вернет позицию цвета в массиве если она есть или -1 если цвета нет.
+//
+// const colors = ["red", "green", "blue"];
+//
+// function checkColor(color) {
+//     console.log(colors.indexOf("red"));
+// }
+//
+// checkColor(colors);
+
+// Задача №9 - функции обработки массивов
+// Задан массив [1, “a”, 2, null, 3, undefined, 4, {}, 5, 6, `word`, 7, 8, false, 9, 100]
+// Напишите функцию filter которая удалить лишнее из массива (все что не является цифрой) и вернет чистый массив [1, 2,  3, 4, 5, 6, 7, 8, 9]
+//
+// const arr = [1, "a", 2, null, 3, undefined, 4, {}, 5, 6, `word`, 7, 8, false, 9, 100, -100];
+// let result = arr.filter(item => typeof (item) === "number" && item <= 9 && item >= -9);
+// console.log(result);
+
+// Задача №10 - функции обработки массивов
+// Задан массив [8, 7,  2,  2,  3, 4, 2,  5, 5, 6, 7, 8, 5, 9, 0, 1]
+// Напишите функцию uniqueSorted, которая удалит дубликаты из массива и вернет отсортированный по возрастанию массив из уникальных значений
+//     [0, 1, 2,  3, 4, 5, 6, 7, 8, 9]
+//
+// let arr = [8, 7, 2, 2, 3, 4, 2, 5, 5, 6, 7, 8, 5, 9, 0, 1];
+//
+// function uniqueSorted() {
+//     arr.sort((a, b) => a - b);
+//     const unique = arr.filter((item, index) => {
+//         return arr.indexOf(item) === index
+//     });
+//     console.log(unique);
+// }
+//
+// uniqueSorted();
+//
+// function uniqueSortedSpread() {
+//     arr.sort((a, b) => a - b);
+//     const unique = [...new Set(arr)];
+//     console.log(unique);
+// }
+//
+// uniqueSortedSpread();
