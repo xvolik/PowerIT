@@ -21,13 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="426d988c-2dac-417b-b56c-7ab41316a483" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arrays/task 1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays/task 1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arrays/task 2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays/task 2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arrays/task 3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays/task 3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arrays/task 4.html" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays/task 4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arrays/task 5.html" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays/task 5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arrays/task 6.html" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays/task 6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arrays/task 7.html" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays/task 7.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
     </list>
@@ -57,11 +50,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Arrays" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Objetcts" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Олеся\Desktop\PowerIT\Objetcts" />
       <recent name="C:\Users\Олеся\Desktop\PowerIT\Arrays" />
     </key>
   </component>
@@ -90,6 +84,8 @@
       <workItem from="1649256250013" duration="3577000" />
       <workItem from="1649259956517" duration="279000" />
       <workItem from="1649397643382" duration="8853000" />
+      <workItem from="1649406827812" duration="43000" />
+      <workItem from="1649421160658" duration="8943000" />
     </task>
     <servers />
   </component>

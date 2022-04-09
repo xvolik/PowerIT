@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+</head>
+<body>
+<div>
+    <h4>
+        // Задача №5 - обработка объектов <br>
+        // Создайте объект person со следующей структурой:<br>
+        // {<br>
+        //     name: `Person`,<br>
+        //         age: 123,<br>
+        //     salary: 1542.33,<br>
+        //     contacts: {<br>
+        //     phone: `112`,<br>
+        //         email: ‘email@domain.com’<br>
+        // },<br>
+        //     address: `Moldova`<br>
+        // }<br>
+        //<br>
+        // Замените в этом объекте номер телефона на `+37312345678` и удалите поле address. Выведите объект в консоль.<br>
+    </h4>
+</div>
+<script>
+    const obj = {
+        name: "Person",
+        age: 123,
+        salary: 1542.33,
+        contacts: {
+            phone: "112",
+            email: "email@domain.com"
+        },
+        address: "Moldova"
+    }
+
+    obj.contacts.phone = "+37312345678";
+    delete obj.address;
+    console.log(obj);
+</script>
+</body>
+</html>
