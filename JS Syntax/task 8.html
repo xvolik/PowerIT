@@ -14,35 +14,14 @@
         // Ошибка Валидации, если ничего не введено<br>
         // PS: На практике не делать такое никогда (писать пользователю что он ввел неверно, username или password)</h4>
     <div>
-    <input style="margin: 5px;" placeholder="Введите логин" type="text" id="logdata" value=""/>
+    <input style="margin: 5px;" placeholder="Введите логин" type="text" id="logData" value=""/>
     </div>
     <div>
-    <input style=" margin: 5px;" placeholder="Введите пароль" type="password" id="passdata" value=""/>
+    <input style=" margin: 5px;" placeholder="Введите пароль" type="password" id="passData" value=""/>
     </div>
-    <button type="submit" name="loginbtn" onclick="check()">Login</button>
-    <button type="submit" name="checkbtn" onclick="check2()">Check</button>
+    <button type="submit" name="loginBtn" onclick="check()">Login</button>
+    <button type="submit" name="checkBtn" onclick="check2()">Check</button>
 </div>
-<script>
-    const x = ("login");
-    const y = ("password");
-    const usernameinput = document.getElementById("logdata");
-    const passwordinput = document.getElementById("passdata");
-
-    function check() {
-        if (usernameinput.value === "" && passwordinput.value === "") {
-            alert("Ошибка Валидации");
-        } else if (usernameinput.value !== x) {
-            alert("Неправильный username");
-        } else if (passwordinput.value !== y) {
-            alert("Неправильный пароль");
-        } else {
-            alert("Данные совпадают");
-        }
-    }
-    function check2() {
-        console.log(usernameinput.value);
-        console.log(passwordinput.value);
-    }
-</script>
+<script src="../js/JS Syntax/task 8.js"></script>
 </body>
 </html>
