@@ -3,7 +3,7 @@ const password = ("password");
 const usernameInput = document.getElementById("logData");
 const passwordInput = document.getElementById("passData");
 
-function check() {
+const check = () => {
     if (usernameInput.value === "" && passwordInput.value === "") {
         alert("Ошибка Валидации");
     } else if (usernameInput.value !== login) {
@@ -13,9 +13,5 @@ function check() {
     } else {
         alert("Данные совпадают");
     }
-}
 
-function check2() {
-    console.log(usernameInput.value);
-    console.log(passwordInput.value);
-}
+};

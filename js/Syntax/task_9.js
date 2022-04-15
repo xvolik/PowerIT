@@ -1,4 +1,4 @@
-function question() {
+const question = () => {
     const name = prompt("Как вас зовут?");
     alert(`Привет ${name}`);
     let wannaJs = confirm("Ты знаком с JavaScript?");
@@ -7,6 +7,6 @@ function question() {
     } else {
         alert("Можно начать изучение прямо сейчас!");
     }
-}
+};
 
 question();

@@ -1,7 +1,7 @@
 const price = "$120";
 
-function extractCurrencyValue() {
+const extractCurrencyValue = () => {
     return Number(price.slice(1));
-}
+};
 
-console.log(extractCurrencyValue())
+console.log(extractCurrencyValue());

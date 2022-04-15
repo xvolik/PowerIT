@@ -22,9 +22,8 @@ let students = [
 ];
 let classMedia = [];
 let studentsList = [];
-let lessFiveList = [];
 
-function mainFunc() {
+const mainFunc = () => {
     students.forEach(function (item) {
         let result = item.marks.reduce((sum, current) => sum + current, 0);
         let media = result / item.marks.length;
@@ -33,39 +32,40 @@ function mainFunc() {
         studentsList.push(item.name + ': ' + media);
     });
 
-    function showStudentList() {
+    const showStudentList = () => {
         console.log("Имя и средний балл студентов: ");
         let i = 0;
         while (i < studentsList.length) {
             console.log(studentsList[i])
             i++
         }
-    }
+    };
 
     showStudentList();
 
-    function lessFive() {
+    const lessFive = () => {
         console.log("Список студентов с оценкой ниже 5: ");
         let i = 0;
-        while (i < lessFiveList.length) {
-            console.log(lessFiveList[i]);
+        while (i < students.length) {
+            if (students[i].media < 5) {
+                console.log(students[i].name + ' ' + students[i].media);
+            }
             i++
         }
-    }
-
+    };
     lessFive();
 
-    function highLow() {
+    const highLow = () => {
         console.log('Наивысший балл: ' + students[0].name + ' ' + students[0].media);
         console.log('Наименьший балл: ' + students[students.length - 1].name + ' ' + students[students.length - 1].media);
-    }
+    };
 
     highLow()
 
-    function sortByMedia() {
-        function sorter(x, y) {
+    const sortByMedia = () => {
+        const sorter = (x, y) => {
             return y['media'] - x['media']
-        }
+        };
 
         students.sort(sorter)
         console.log("Сортировка по убыванию :");
@@ -74,7 +74,7 @@ function mainFunc() {
 
     sortByMedia();
 
-    function topStudents() {
+    const topStudents = () => {
         let classMediaSumm = classMedia.reduce((sum, current) => sum + current, 0);
         let commonMedia = classMediaSumm / classMedia.length;
         const bests = students.filter(student => {
@@ -88,9 +88,9 @@ function mainFunc() {
             console.log(bests[i].name + ': ' + bests[i].media);
             i++;
         }
-    }
+    };
 
     topStudents();
-}
+};
 
 mainFunc();

@@ -1,7 +1,7 @@
-function task2() {
+const task2 = () => {
     const a = Number(prompt('Введите начало дипазона'));
     const b = Number(prompt('Введите конец дипазона'));
-    let sum = 0;
+    const sum = 0;
     for (let i = a; i < b; i++) {
         if (i % 2 === 0) {
             console.log(i);
@@ -9,6 +9,6 @@ function task2() {
         }
     }
     console.log(sum);
-}
+};
 
 task2();

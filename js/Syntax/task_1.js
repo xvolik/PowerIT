@@ -1,5 +1,5 @@
-function task1() {
-    let n = prompt('Введите число от 0 до 9');
+const task1 = () => {
+    const n = prompt('Введите число от 0 до 9');
     switch (n) {
         case '0':
             alert('Вы ввели "ноль"');
@@ -34,6 +34,6 @@ function task1() {
         default:
             alert('Значение вне диапазона!');
     }
-}
+};
 
 task1();

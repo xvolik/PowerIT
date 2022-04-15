@@ -1,4 +1,4 @@
-function task2() {
+const task1 = () => {
     const a = Number(prompt('Введите начало дипазона'));
     const b = Number(prompt('Введите конец дипазона'));
 
@@ -32,6 +32,6 @@ function task2() {
     someArray.reduce(function (previousValue, item) {
         console.log(item);
     }, 0)
-}
+};
 
-task2();
+task1();
